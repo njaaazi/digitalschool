@@ -1,0 +1,79 @@
+.summerschoolprogram-module{
+    background-color: $color-24;
+    color: $color-0;;
+    .sumemer-school-elements{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        .about-summer-school{
+            font-family: "flex-mono medium";
+            padding: 5%;
+            h2{
+                font-size: 16px;
+            }
+            
+        }
+        .program{
+
+           a{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            text-decoration: none;
+            span{
+                font-size: 50px;
+                color: $color-26;
+                font-family: "flex-mono medium";
+               
+            }
+           }
+            padding: 5%;
+            h1{
+                padding-bottom: 7rem;
+                font-family: 'flex 95';
+            }
+            .prog-one{
+                color: $color-7;
+            }
+            .prog-two{
+                color: $color-26;
+
+            }
+            .prog-three{
+                color: $color-25;
+
+            }
+            .prog-four{
+                color: $color-13;
+
+            }
+            .prog-five{
+                color: $color-0
+
+            }
+
+        }
+
+    }
+    @media only screen and (max-width: 600px){
+        background-color: $color-0;
+        .sumemer-school-elements{
+            flex-direction: column;
+            .about-summer-school{
+                h2{
+                    color: $color-28;
+                }
+            }
+            .program{
+
+                #prog-mobile{
+                    color: $color-24;
+                    font-size: 26px;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,113 @@
+.home-banner-module{
+    background-color: url();
+    h1{
+        color: white;
+        padding: 100px 65px 3px 66px;
+        user-select: none;
+        width: 60%;
+        font-size: 30px;
+        font-family: "sequel";
+        font-weight: bolder;    
+        letter-spacing: 5px;
+    }
+    .contact-part{
+        outline: none;
+        padding: 40px 0px 0px 66px;
+        color: white;
+        h2{
+            font-size: 22px;
+        }
+        #number-select{
+            background-color: blue;
+            border: none;
+            height: 35px;
+            width: 50px;
+            color: #ffffff;
+            outline: none;
+        }
+        #application-button{
+            background-color: #41e06c;
+            height: 35px;
+            border:none;
+            color: white;
+            outline: none;
+        }
+        input{
+            height: 35px;
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+    }
+    .mobile-img{
+        display: none;
+    }
+    .student-information-div{
+        display: flex;
+        justify-content: flex-end;
+        height: 120px;
+        .student-information{
+            background-color: tomato;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 40%;
+         }
+         .student-information-details{
+             padding: 30px;
+             font-family: cocacola;
+         }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        background: none !important;
+        background-color: $color-24 !important;
+        
+        h1{
+            text-align: left;
+            padding: 8px 0px 0px 45px;
+            font-size: 36px;
+            line-height: 60px;
+            width: 100%;
+
+        }
+        .mobile-img{
+            display: block;
+            width: fit-content;
+            img{
+                width:384px;
+            }
+        }
+
+        .student-information-div{
+            display: none;
+            
+            
+        }
+        .contact-part{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 16px;
+            }
+        }
+        .contact-elements{
+            
+        }
+    }
+  
+    
+}
+// @font-face{
+//     font-family: "cocacola";
+//     src: url("../../../static/fonts/Sequel/cocacola.ttf")
+//     format("ttf");
+// }
+

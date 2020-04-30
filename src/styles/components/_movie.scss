@@ -1,0 +1,12 @@
+.movie-module{
+    display: flex;
+    justify-content: center;
+    background-color: $color-7;
+    h1{
+        color: $color-0;
+        padding: 30%;
+        font-family: 'flex 95';
+        font-size: 100px;
+        letter-spacing: 8px;
+    }
+}

@@ -1,0 +1,154 @@
+// !Please check the node_modules/bootstrap/scss/_variables.scss file from Bootstrap before styling, as you can overwrite variables here first for cleaner CSS!
+
+// COLORS
+// If you need white or black, just use $white or $black, Bootstrap already has the variables assigned.
+$color-0: #ffffff; //white
+$color-1: #021d38; // navy
+$color-2: #354a60; // dark-grey-blue
+$color-3: #ccd2d7; // light-blue-grey
+$color-4: #e5e8eb; // very-light-blue
+$color-5: #b3bbc3; // light-grey-blue
+$color-6: #0cd722; // vibrant-green
+$color-7: #ff3a00; // pumpkin-orange
+$color-8: #ff0042; // neon-red
+$color-9: #0079ff; // deep-sky-blue
+$color-10: #f5f6f7; // pale-grey
+$color-11: rgba(2, 29, 56, .15); // navy-15
+$color-12: #ffba7f; // shadow of .btn-main on hover
+$color-13: #108bf9; // messenger blue
+$color-14: #4fce5d; // whatsapp green
+$color-15: #3b5998; // facebook blue
+$color-16: #1da1f2; // twitter blue
+$color-17: #ff5700; // reddit orange
+$color-18: #585858; // email grey
+$color-19: #f5f5f5; // background for page outside of max-width 1920px
+$color-20:#000000; // color black
+$color-21: var(--navy);
+$color-22:var(--dark-grey-blue);
+$color-23:var(--deep-sky-blue);
+$color-24: #00004e; // DS default color
+$color-25: #9300b2; // purple
+$color-26: #7eb900; //DS button color
+$color-27: #e8e8e8; // DS lighter Grey
+$color-28: #000000; // DS lighter Grey
+
+// CONTAINER
+$container-max-widths: ();
+$container-max-widths: map-merge((sm: 768px, md: 992px, lg: 1139px, xl: 1140px), $container-max-widths);
+$body-bg: $color-19;
+$page-box-shadow: 0 8px 16px 0 $color-11;
+
+// MODULES (Generic)
+$spacer: 2.4rem;
+$negative-spacer: -2.4rem;
+$spacer-sm: 1.6rem;
+$negative-spacer-sm: -1.6rem;
+$box-shadow: 0 2px 6px 0 $color-11; // Box shadow used around multiple components
+$no-padding: 0;
+$no-margin: 0;
+$border-width: 1px;
+$general-border: $border-width solid $color-4;
+
+// TYPOGRAPHY
+// Base, body
+$body-color: $color-2;
+$font-family-hebbo:Heebo;
+$font-family-sans-serif: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif;
+$font-family-base: "Heebo",
+$font-family-sans-serif;
+$font-size-base: 1.6rem; // 1.6 x 10 (html font-size) = 16px
+$line-height-lg: 2.5; // Default $line-height-base is 1.5
+$full-width: 100%;
+$small-font-size: 1.2rem;
+// Headings
+$h1-font-size: 3.6rem; // Homepage h1 will need different styling
+$h2-font-size: 2.4rem;
+$h3-font-size: 1.8rem;
+$h4-font-size: 1.3rem;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base;
+$headings-font-weight: 700;
+$headings-color: $color-1;
+$headings-margin-bottom: 1rem;
+// Links
+$link-color: $color-9;
+$link-hover-color: $color-9;
+$link-hover-decoration: none;
+$link-font-weight: 500;
+
+// BUTTONS
+$input-btn-font-size: 1.8rem; // Font-size for input- and btn- classes
+$btn-font-weight: 500;
+$btn-border-width: 2px;
+$btn-border-radius: 0;
+$input-btn-padding-y: 0;
+$btn-shadow: 0px 4px 16px $color-12; // Only for btn-main according to designer
+$share-buttons: (
+    /*($class-name $bg-color $top-position)*/
+    (Messenger $color-13 -.1rem),
+    (WhatsApp $color-14 -.2rem),
+    (Facebook $color-15 -.2rem),
+    (Twitter $color-16 -.1rem),
+    (Reddit $color-17 -.3rem),
+    (Email $color-18 -.2rem),
+); // To be used in share button modal
+
+// NAVIGATION
+$navbar-brand-padding-y: .7rem;
+$nav-link-disabled-color: $color-1;
+$nav-link-padding-y: $no-padding;
+$nav-link-padding-x: $no-padding;
+$navbar-padding-y: $no-padding; // Needed a more specific padding (not just top and bottom)
+$navbar-padding-x: $no-padding;
+$nav-box-shadow: 2px 2px 6px -1px $color-11; // Because of page box shadow, needs to be thinner so both sides of the page are even
+// Search form in nav
+$input-border-color: transparent;
+$input-btn-padding-x: 0;
+$btn-focus-box-shadow: none;
+$input-font-size: $font-size-base;
+$input-placeholder-color: $color-5;
+$input-color: $color-1;
+$input-focus-box-shadow: none;
+$input-focus-border-color: transparent;
+// Dropdown
+$dropdown-transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+opacity 0.55s ease;
+$dropdown-min-width: unset;
+$dropdown-bg: $color-4;
+$dropdown-divider-bg: $color-4;
+$dropdown-link-color: $color-1;
+$dropdown-link-hover-color: $color-1;
+$dropdown-link-hover-bg: $color-4;
+$dropdown-link-active-color: $color-1;
+$dropdown-link-active-bg: $color-1;
+$dropdown-link-disabled-color: $color-1;
+$dropdown-box-shadow: none;
+$dropdown-spacer: .4rem;
+$dropdown-negative-spacer: -.4rem;
+$dropdown-padding-y: $dropdown-spacer;
+$dropdown-item-padding-y: $no-padding;
+$dropdown-item-padding-x: $no-padding;
+$dropdown-border-color: transparent;
+$dropdown-border-width: 0;
+$dropdown-border-radius: 0 0 .3rem .3rem;
+$expand-toggle-width: 1.2rem;
+
+// TABLES
+$table-border-color: $color-3;
+$table-head-bg: $color-4;
+$table-accent-bg: $color-10;
+
+// OTHER VARIABLES
+$sticky-nav: 26rem;
+$font-family-pullquote: "Crete Round",
+$font-family-sans-serif;
+$speed: 200ms; // For animations
+$easing: cubic-bezier(0.7, 0, 0, 0.7);

@@ -1,0 +1,102 @@
+.contact-module{
+    background-color: $color-24;
+    p, h1,h2{
+        color: $color-0;
+    }
+   
+    #title{
+        font-family: "flex 95";
+    }
+    .contact-elements{
+        display: flex;
+        align-items: center;
+        .contact-form{
+            padding: 3rem 0rem 0rem 0rem;
+        }
+        .contact-info{
+            padding: 6rem;
+            h2{
+                font-size: 1.3rem;
+                // font-family: "flex 95";
+            }
+            #number-select{
+            background-color: $color-24;
+            font-size: 15px;
+            width: 50px;
+            color: #ffffff;
+            outline: none;
+            cursor: pointer;
+            }
+            form{
+                #number-select{
+                    font-family: "flex-mono medium";
+                    height: 100%;
+                }
+                .apo{
+                    display: flex
+                }
+                input{
+                    border: none;
+                    height: 100%;
+                }
+                #input-number{
+                    width: 100%;
+                    font-family: 'flex-mono medium';
+                    padding: 5px;
+                }
+                #submit-button{
+                    background-color: $color-26;
+                    color: $color-0;
+                    font-family: 'flex button';
+                    font-size: 14px;
+                     padding: 9px;
+                }
+                display: flex;
+            }
+            #desktop-hidden{
+                display: none;
+            }
+            font-size: 22px;
+
+            .single-element{
+                padding: 3rem 0rem 0rem 0rem;
+                h1{
+                    font-family: "flex 95";
+                    font-size: 30px;
+                }
+                p{
+                    font-family: "flex-mono medium";
+                    padding: 0;
+                    margin: 0;
+                    font-size: 15px;
+                }
+                a{
+                    color: $color-0;
+                }
+                #underlined{
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
+            }
+            #social-networks{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    @media only screen and (max-width: 600px){
+        .contact-form, #title, .digitalschool-logo {
+            display: none;
+        }
+        .contact-elements .contact-info .single-element h1{
+            font-size: 15px;
+        }
+        .contact-elements .contact-info{
+            padding: 2.5rem;
+        }
+        .contact-elements .contact-info .single-element {
+            padding-top: 2rem;
+        }
+
+    }
+}

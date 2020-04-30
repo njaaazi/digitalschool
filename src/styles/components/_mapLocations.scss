@@ -1,0 +1,45 @@
+.map-locations-module{
+    .map-locations-card{
+        .card{
+            display: flex;
+            flex-direction: row;
+            .text-elements{
+                width: 50%;
+                padding: 5%;
+                background-color: #108bf9;
+                color: $color-0;;
+                h1{
+                    font-size: 1.9rem;
+                    font-family: "flex 105";
+                }
+            }
+            img{
+                width: 50%;
+                
+            }
+            h2{
+                font-size: 22px;
+                font-family: "flex-mono medium";
+                margin-top: 5%;
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        display: none;
+        // .map-locations-card{
+        //     .card{
+        //         flex-direction: column;
+        //         .text-elements{
+        //             width: 100%;
+        //             padding: 20px;
+        //             background-color: $color-24;
+
+        //         }
+        //         img{
+        //             width: 100%;
+        //         }
+        //     }
+        // }
+
+    }
+}

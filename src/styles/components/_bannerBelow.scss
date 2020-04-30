@@ -1,0 +1,115 @@
+.below-banner-module{
+    color: $color-0;
+    .banner-elements{
+        display: flex;
+        padding: 10%;
+        .banner-moto{
+            h1{
+                font-family: "flex 95";
+                font-size: 2.2rem;
+            }
+
+        }
+        .contact-elements{
+            padding: 25px;
+            h2{
+                font-size: 1.3rem;
+                // font-family: "flex 95";
+            }
+            #number-select{
+            background-color: $color-24;
+            font-size: 15px;
+            width: 50px;
+            color: #ffffff;
+            outline: none;
+            cursor: pointer;
+            }
+            form{
+                #number-select{
+                    font-family: "flex-mono medium";
+                    height: 100%;
+                }
+                .apo{
+                    display: flex
+                }
+                input{
+                    border: none;
+                    height: 100%;
+                }
+                #input-number{
+                    width: 100%;
+                    font-family: 'flex-mono medium';
+                    padding: 5px;
+                }
+                #submit-button{
+                    background-color: $color-26;
+                    color: $color-0;
+                    font-family: 'flex button';
+                    font-size: 14px;
+                     padding: 9px;
+                }
+                display: flex;
+            }
+            #desktop-hidden{
+                display: none;
+            }
+            font-size: 22px;
+        }
+
+    }
+    @media only screen and (max-width: 600px) {
+        .banner-elements{
+            display: flex;
+            flex-direction: column;
+            background-color: $color-0;
+            .banner-moto{
+                color: $color-24;
+                h1{
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+
+                }
+            }
+            .contact-elements{
+                padding:0;
+                h2{
+
+                }
+                #number-select{
+                    background-color: $color-27;
+                    color: #000000;
+
+                }
+                form{
+                    flex-direction: column;
+                    input{
+                        background-color: $color-24;
+                        color: $color-0;
+                    }
+                    #input-number{
+
+                    }
+                    #submit-button{
+
+                    }
+                    .send-button{
+                        padding-top: 25px;
+                    }
+                }
+                #desktop-hidden{
+                    display: block;
+                    font-family: "flex-mono medium";
+                    color: $color-24;
+                    font-size: 15px;
+                    padding: 15px 0px 15px 0px;
+
+                }
+                #mobile-hidden{
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,24 @@
+.cinema-module{
+    .cinema-cards{
+        .card{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 50%;
+            }
+            .about{
+                padding: 5%;
+                h2{
+                    font-size: 16px;
+                    font-family: "flex-mono medium";
+                    color: $color-24;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 600px){
+        .card{
+            flex-direction: column;
+        }
+    }
+}

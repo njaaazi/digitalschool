@@ -1,0 +1,25 @@
+.statistics-module{
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-25;
+    color: $color-0;
+    padding: 40px;
+    .statistics{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p{
+            font-size: 12px;
+        }
+        h1{
+            font-family: "sequel", sans-serif;
+        }
+    }
+    @media only screen and (max-width: 600px){
+        // background-image: url('digital-school/wp-content/uploads/2020/04/Logo_Develop_19_DSITALIC-19.png');
+        flex-direction: column;
+        #mobile-hidden{
+            display: none;
+        }
+    }
+}

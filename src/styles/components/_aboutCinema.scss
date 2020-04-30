@@ -1,0 +1,28 @@
+.about-cinema-module{
+    background-color: $color-7;
+    color: $color-0;
+    .text-info{
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            color: $color-0;
+            font-family: 'flex 95';
+            padding-bottom: 5%;
+            width: 50%;
+            font-size: 2.0rem;
+            letter-spacing: 1px;
+            outline: none;
+        }
+        .side-texts{
+            display: flex;
+            justify-content: space-around;
+            h2{
+                font-size: 16px;
+                font-family: "flex-mono medium";
+                color: $color-0;
+                padding: 0px 3% 0px 0px;
+            }
+        }
+    }
+}

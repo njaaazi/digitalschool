@@ -1,0 +1,90 @@
+.footer-part{
+    display: flex;
+    // padding: 1.5rem;
+    .d-s-logo{
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 1rem;
+        h1{
+            font-family: 'sequel 76';
+            font-size: 24px;
+        }
+        #ds_logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    background-color: $color-24;
+    justify-content: space-around;
+    .left-part{
+        display: flex;
+        justify-content: space-around;
+        .mapping{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .footer-elements{
+                margin:2rem;
+                a{
+                    color: $color-0;
+                    font-family: "flex-mono medium";
+                    font-size: 14px;
+                    // padding: 1.5rem;
+                }
+            }
+            #show-mobile{
+                display: none;
+            }
+        }
+
+    }
+    .right-part{
+        padding: 1.5rem;
+        .social-networks{
+            margin: 1.5rem;
+            display: flex;
+            li{
+                margin: 0.5rem;
+            }
+        }
+
+    }
+    @media only screen and (max-width: 600px){
+        flex-direction: column;
+        .d-s-logo{
+            h1{
+                font-size: 36px;
+            }
+        }
+        .left-part{
+            flex-direction: column;
+            .mapping{
+                flex-direction: column;
+                align-items: flex-start;
+                .footer-elements{
+                    margin: 1rem;
+                    a{
+                        font-size: 16px;
+                        display: flex;
+                    }
+                    #show-mobile{
+                        display: block;
+                        padding-left: 15px;
+                    }
+                }
+
+            }
+
+
+        }
+        .right-part{
+            .social-networks{
+                justify-content: space-between;
+            }
+
+        }
+
+
+    }
+}
