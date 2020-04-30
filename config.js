@@ -5,7 +5,7 @@
 //     wordPressUrl: `http://localhost/digital-school`,
 // }
 const config = {
-    wordPressUrl: `http://localhost/ds-wordpress`,
+    wordPressUrl: `https://dev.shkolladigjitale.com/wordpress/`,
 }
 
 
