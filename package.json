@@ -19,7 +19,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-source-graphql": "^2.1.33",
-    "gatsby-source-wordpress": "^3.1.62",
+    "gatsby-source-wordpress": "^4.0.8",
     "gatsby-transformer-sharp": "^2.3.14",
     "gatsby-wpgraphql-inline-images": "^0.2.5",
     "glamor": "^2.20.40",
